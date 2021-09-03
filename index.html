@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkbox</title>
+</head>
+<body>
+    
+ <div style="text-align: center;">
+
+    <div>
+        <input class="chkbox" type="checkbox" onclick=func(); >
+        <b style=" font-size: 20px; color:#009A88;">Will You Add Number? Only super admin can show this.(optional)</b>
+    </div>
+
+    <div class="rafat">
+        <input style=" border: 1px solid black;
+        border-radius: 5px; font-size: 15px; width: 500px; height: 30px; outline: none;" type="number" placeholder=" Type Your Phone Number">
+    </div>
+
+</div>
+
+<script>
+
+let chkbox = document.querySelector('.chkbox');
+let rafat = document.querySelector('.rafat');
+
+rafat.style.display = 'none';
+
+
+
+function func(){
+
+if(chkbox.checked){
+    rafat.style.display = 'block';
+}else{
+    rafat.style.display = 'none';
+}
+
+
+}
+
+</script>
+
+
+</body>
+</html>
